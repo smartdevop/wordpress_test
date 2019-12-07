@@ -1,4 +1,4 @@
-1Feature('Upload Photo');
+Feature('Upload Photo');
 let faker = require('faker');  //Thư viện sinh dữ liệu giả ngẫu nhiên
 
 Scenario('Login', (I) => {  
