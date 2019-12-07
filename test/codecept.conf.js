@@ -3,14 +3,22 @@ exports.config = {
   output: './output',
   helpers: {
     Puppeteer: {
-      url: 'http://localhost',
-      show: true
+      url: 'http://45.118.145.149:10000',
+      show: false,
+      headless: true,
+      chrome: {
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
+      }
     }
   },
   include: {
     I: './steps_file.js'
   },
   bootstrap: null,
-  mocha: {},
+  mocha: {
+    "reporterOptions": {
+      "mochaFile": "./result.xml"
+    }
+  },
   name: 'test_wordpress'
 }
