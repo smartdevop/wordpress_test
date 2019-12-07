@@ -11,8 +11,8 @@ services:
   wordpress:
     image: 'bitnami/wordpress:5'
     ports:
-      - '8099:8099'
-      - '44399:44399'
+      - '8099:80'
+      - '44399:443'
     volumes:
       - 'wordpress_data:/bitnami'
     depends_on:
