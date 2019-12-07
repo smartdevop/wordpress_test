@@ -3,7 +3,7 @@ exports.config = {
   output: './output',
   helpers: {
     Puppeteer: {
-      url: 'http://45.118.145.149:10000',
+      url: 'http://45.118.145.149:8099',
       show: false,
       headless: true,
       chrome: {
