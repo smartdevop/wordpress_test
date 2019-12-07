@@ -1,10 +1,10 @@
-Feature('Upload Photo');
+1Feature('Upload Photo');
 let faker = require('faker');  //Thư viện sinh dữ liệu giả ngẫu nhiên
 
 Scenario('Login', (I) => {  
   I.amOnPage('/wp-login.php');
   I.fillField('input#user_login', "user");
-  I.fillField('input#user_pass', 'bitnami');
+  I.fillField('input#user_pass', 'bitnami1');
   I.click('input#wp-submit');
   I.seeInCurrentUrl('/wp-admin/');
 
